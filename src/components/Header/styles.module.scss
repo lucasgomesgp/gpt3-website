@@ -1,0 +1,100 @@
+@import "../../variables";
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4rem;
+
+    .items {
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+
+            li {
+                font-weight: 500;
+                font-size: 1.125rem;
+
+                &:first-child {
+                    gap: 0;
+                    margin-right: 4.29875rem;
+                }
+            }
+        }
+    }
+
+    .buttons {
+        a {
+            margin-right: 1.6rem;
+            font-size: 1.125rem;
+
+        }
+
+        button {
+            background-color: $bg-button;
+            color: $color-text-white;
+            border: none;
+            font-size: 1.125rem;
+            width: 9.5rem;
+            height: 3.625rem;
+            cursor: pointer;
+        }
+    }
+
+    .toggleMenu {
+        display: none;
+        cursor: pointer;
+
+    }
+}
+
+.menuToggled {
+    transition: all 500ms ease-in-out both;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-bg-toggle;
+        padding: 0.4rem 0;
+
+        li {
+            width: 100%;
+            border-bottom: 1px solid #ffffff;
+            text-align: center;
+            padding: 0.4rem 0;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:78.125rem) {
+    .header {
+        padding: 1rem 0;
+
+        .items {
+            ul {
+                li {
+                    &:not(:first-child) {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .buttons {
+            display: none;
+        }
+
+        .toggleMenu {
+            display: initial;
+        }
+    }
+}
