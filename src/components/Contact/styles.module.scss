@@ -5,7 +5,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // padding-left: 8.5rem;
     flex-wrap: wrap;
     
     .info{
@@ -15,7 +14,6 @@
         justify-content: center;
         margin-top: 1rem;
         word-wrap: break-word;
-        flex: 1;
 
         .title{
             font-weight: 800;
@@ -31,8 +29,10 @@
         .subTitle{
             color: $color-text;
             font-size: 1rem;
-            text-align: left;
-            width: 80%;
+            text-align: center;
+            line-height: 1.8rem;
+            width: 100%;
+            margin: 0 auto;
             
         }
         
@@ -79,6 +79,9 @@
 }
 
 @media screen and (min-width: 64rem) {
+    .info{
+        flex: 1;
+    }
     .contactInpt{
         height: 4.5625rem;
         width: 32rem;
@@ -88,13 +91,29 @@
         font-size: 1.25rem;
         margin-right: 8rem;
     }
+    .buttons, .people{
+        text-align: left;
+    }
 }
 
-@media screen and (max-width:90rem){
+@media screen and (min-width:90rem){
     .contact{
+        text-align: left;
+        padding-left: 8.5rem;
         .info{
             .title{
                 font-size: 3.875rem;
+                text-align: left;
+            }
+            .subTitle{
+                text-align: left;
+            }
+            .buttons{
+                padding: 0;
+                text-align: left;
+            }
+            .people{
+                text-align: left;
             }
         }
     }
