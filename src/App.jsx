@@ -1,10 +1,13 @@
+import { Contact } from './components/Contact';
+import { Menu } from './components/Menu';
+
 import styles from './App.module.scss';
-import { Header } from './components/Header';
 
 function App() {
   return (
     <div className={styles.app}>
-      <Header />
+      <Menu />
+      <Contact />
     </div>
   );
 }

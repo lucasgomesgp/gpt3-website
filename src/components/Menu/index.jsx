@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import logo from "../../assets/GPT-3.svg";
 import { FiMenu } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
+
 import styles from "./styles.module.scss";
 
 const MenuItems = () => (
@@ -13,7 +14,7 @@ const MenuItems = () => (
         <li><a href="#library">Library</a></li>
     </>
 );
-export function Header() {
+export function Menu() {
     const [toggleMenu, setToggleMenu] = useState(false);
     const menuRef = useRef();
     function changeMenu() {

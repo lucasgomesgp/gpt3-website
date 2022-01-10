@@ -51,7 +51,8 @@
 
 .menuToggled {
     transition: all 500ms ease-in-out both;
-
+    display: none;
+    
     ul {
         display: flex;
         flex-direction: column;
