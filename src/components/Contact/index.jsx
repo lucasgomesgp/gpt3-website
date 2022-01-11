@@ -4,9 +4,10 @@ import styles from "./styles.module.scss";
 
 export function Contact() {
     return (
-        <header className={styles.contact}>
+        <header className={styles.contact} id="home">
             <div className={styles.info}>
-                <h1 className={styles.title}>Let’s Build Something
+                <h1 className={`gradient-text ${styles.title}`}>
+                    Let’s Build Something
                     amazing with GPT-3
                     OpenAI
                 </h1>

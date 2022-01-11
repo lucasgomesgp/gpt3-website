@@ -1,0 +1,93 @@
+@import "../../variables";
+
+.whatIsGpt3{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem;
+    width: 80%;
+    color: $color-text-white;
+    margin: 8.05rem auto;
+
+    background:-moz-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    p{
+        color: $color-text;
+    }
+    .initial{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 2rem;
+
+        .title{
+            align-self: flex-start;
+            flex: 1;
+        }
+
+        .subSection{
+            align-self: flex-start;
+            flex: 2.8;
+            line-height: 1.8rem;
+        }
+    }
+
+    .central{
+        margin-top: 5.6875rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+
+        .library{
+            font-weight: 500;
+        }
+        
+    }
+    
+    .bottomSections{
+        margin-top: 5.6875rem;
+        display: flex;
+        gap: 0.4rem;
+        flex-wrap: wrap;
+        .titleSection{
+            margin-bottom: 4rem;
+        }
+
+        p{
+            width: 100%;
+        }
+        .subText{
+            margin-top: 1.5rem;
+        }
+        
+        .firstSection{
+            flex: 1.2;
+        }
+        .secondSection{
+            flex: 1.5;
+            .subText{
+                margin-right: 2.625rem;
+            }
+        }
+        
+        .lastSection{
+            flex: 1.5;
+        }
+    }
+}
