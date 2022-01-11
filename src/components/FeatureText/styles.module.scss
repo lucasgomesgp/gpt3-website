@@ -1,0 +1,74 @@
+@import "../../variables";
+
+.featureText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+    .title{
+        flex: 1;
+    }
+    .centralTexts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+
+        .text{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 4rem;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .titleCentral{
+            font-size: 1.2rem;
+        }
+        .subTextCentral{
+            color: $color-text;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+@media screen and (min-width: 64rem){
+    .featureText{
+        align-items: flex-start;
+        font-size: 1.4rem;
+        gap: 10rem;
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .firstSubText{
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+    .centralTexts{
+        flex: 1.2;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .text{
+        flex-direction: row;
+    }
+    .titleCentral{
+        text-align: left;
+        flex: 1;
+        font-weight: bold;
+    }
+    .subTextCentral{
+        text-align: left;
+        flex: 1.5;
+        // margin-left: 45%;
+        // margin-top: 2rem;
+    }
+}
