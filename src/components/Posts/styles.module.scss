@@ -1,0 +1,56 @@
+@import "../../variables";
+
+.bigTitle{
+    text-align: left;
+    margin-left: 9rem;
+}
+.posts{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "post1 post2 post3" "post1 post4 post5";
+    gap: 1.5rem;
+    width: 80%;
+    margin: 0 auto;
+
+.infoPost{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    background-color: $color-blog;
+}
+
+.date{
+    font-size: 0.8rem;
+}
+.postTitle{
+    width: 70%;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+.bottomText{
+    justify-self: end;
+    font-size: 0.8rem;
+}
+.post1{
+    grid-area: post1;
+}
+
+.post2{
+    grid-area: post2;
+}
+
+.post3{
+    grid-area: post3;
+}
+
+.post4{
+    grid-area: post4;
+}
+
+.post5{
+    grid-area: post5;
+}
+}
