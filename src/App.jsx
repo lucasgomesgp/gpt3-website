@@ -6,6 +6,7 @@ import { FeatureText } from './components/FeatureText';
 import { FeatureApps } from './components/FeatureApps';
 
 import styles from './App.module.scss';
+import { Register } from './components/Register';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <WhatIsGPT3 />
       <FeatureText />
       <FeatureApps />
+      <Register />
     </div>
   );
 }
