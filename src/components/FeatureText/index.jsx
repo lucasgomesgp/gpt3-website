@@ -14,7 +14,7 @@ const Item = (props) => (
 );
 export function FeatureText() {
     return (
-        <section className={styles.featureText}>
+        <section className={styles.featureText} id="open">
             <div className={styles.title}>
                 <h1 className={`gradient-text ${styles.firstTitle}`}>
                     The Future is Now and You Just Need To Realize It. Step into Future Today & Make it Happen.

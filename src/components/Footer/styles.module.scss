@@ -1,0 +1,80 @@
+@import "../../variables";
+
+.footer{
+    text-align: center;
+    background-color: $color-footer;
+    margin-top: 9rem;
+
+    .title{
+        font-size: 2.5rem;
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 7rem;
+    }
+
+    .btn{
+        border: 1px solid $color-text-white;
+        font-size: 0.8rem;
+        color: $color-text-white;
+        padding: 1rem;
+        background-color: transparent;
+        cursor: pointer;
+        margin-top: 4rem;
+    }
+
+    .section{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 8rem;
+        flex-wrap: wrap;
+
+        .titleLink{
+            font-size: 0.8rem;
+            text-align: left;
+        }
+        
+        .subLink{
+            font-size: 0.6rem;
+            text-align: left;
+            margin-top: 1rem;
+            cursor: pointer;
+        }
+
+        .link2{
+            margin-left: 5rem;
+        }
+        
+        .link3{
+            margin-left: 4rem;
+        
+            &:nth-child(2){
+                width: 50%;
+            }
+        }
+    }
+
+    .gpt3{
+        margin-bottom: 1rem;
+        .rights{
+            width: 60%;
+            text-align: center;
+            margin: 0 auto;
+            font-size: 0.8rem;
+        }
+    }
+
+    .rightsReserved{
+        margin-top: 4rem;
+        font-size: 0.8rem;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 48rem){
+    .footer{
+        margin-top: 22rem;
+    }
+}

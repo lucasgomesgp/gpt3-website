@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 export function Footer() {
     return (
         <footer className={styles.footer}>
-            <h2 className={styles.title}>Do you want to step in to the future before others</h2>
+            <h2 className={`${styles.title} gradient-text`}>Do you want to step in to the future before others</h2>
             <button className={styles.btn}>Request Early Access</button>
             <section className={styles.section}>
                 <div className={styles.gpt3}>
@@ -33,6 +33,7 @@ export function Footer() {
                     <p className={styles.subLink}>info@payme.net</p>
                 </div>
             </section>
+            <p className={styles.rightsReserved}>&copy; 2021 GPT-3. All rights reserved.</p>
         </footer>
     );
 }

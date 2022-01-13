@@ -27,7 +27,7 @@ const Post = (props) => (
 export function Posts() {
     return (
         <>
-            <h2 className={`gradient-text ${styles.bigTitle}`}>
+            <h2 className={`gradient-text ${styles.bigTitle}`} id="library">
                 A lot is happening,
                 We are blogging about it.
             </h2>

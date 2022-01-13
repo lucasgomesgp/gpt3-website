@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 
 export function FeatureApps() {
     return (
-        <section className={styles.featureApps}>
+        <section className={styles.featureApps} id="cases">
             <div className={styles.image}>
                 <img src={feature} alt="Feature Apps" />
             </div>

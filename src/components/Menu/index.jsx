@@ -10,7 +10,7 @@ const MenuItems = () => (
         <li><a href="#home">Home</a></li>
         <li><a href="#whatisgpt3">What is GPT?</a></li>
         <li><a href="#open">Open AI</a></li>
-        <li><a href="cases">Case Studies</a></li>
+        <li><a href="#cases">Case Studies</a></li>
         <li><a href="#library">Library</a></li>
     </>
 );

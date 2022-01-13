@@ -1,56 +1,108 @@
 @import "../../variables";
 
-.bigTitle{
-    text-align: left;
-    margin-left: 9rem;
+.bigTitle {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 800;
 }
-.posts{
+
+.posts {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "post1 post2 post3" "post1 post4 post5";
-    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "post1" "post2" "post3" "post4" "post5";
     width: 80%;
     margin: 0 auto;
 
-.infoPost{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    justify-content: center;
-    background-color: $color-blog;
+
+    .postCurrent {
+        margin: 0 auto;
+        // width: 50%;
+        img {
+            width: 100%;
+        }
+    }
+    .infoPost {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        justify-content: center;
+        background-color: $color-blog;
+        margin: 0;
+    }
+
+    .date {
+        font-size: 0.8rem;
+    }
+    .postTitle {
+        width: 70%;
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+
+    .bottomText {
+        justify-self: end;
+        font-size: 0.8rem;
+    }
+    .post1 {
+        grid-area: post1;
+        margin-top: 2rem;
+    }
+
+    .post2 {
+        grid-area: post2;
+        margin-top: 2rem;
+    }
+
+    .post3 {
+        grid-area: post3;
+    }
+
+    .post4 {
+        grid-area: post4;
+    }
+
+    .post5 {
+        grid-area: post5;
+    }
 }
 
-.date{
-    font-size: 0.8rem;
-}
-.postTitle{
-    width: 70%;
-    font-size: 1.4rem;
-    margin-top: 1rem;
-}
+@media screen and (min-width: 48rem){
+    .bigTitle{
+        text-align: left;
+        margin-left: 8rem;
+        font-size: 2.5rem;
+        width: 34%;
+    }
 
-.bottomText{
-    justify-self: end;
-    font-size: 0.8rem;
-}
-.post1{
-    grid-area: post1;
-}
+    .posts{
+        grid-template-rows: repeat(2, 2fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "post1 post2 post3" "post1 post4 post5";
+        gap: 1.5rem;
+        margin-top: 2rem;
 
-.post2{
-    grid-area: post2;
-}
+        .postTitle{
+            font-size: 1.2rem
+        }
+        .post1{
+            margin-top: 0;
+        }
 
-.post3{
-    grid-area: post3;
-}
+        .post2{
+            margin-top: 0;
+        }
 
-.post4{
-    grid-area: post4;
-}
+        .post4, .post5{
+            margin-top: 1rem;
+        }
+    }
 
-.post5{
-    grid-area: post5;
-}
+    .postCurrent{
+        width: 100%;
+        
+        .infoPost{
+            height: 60%;
+        }
+    }
 }
